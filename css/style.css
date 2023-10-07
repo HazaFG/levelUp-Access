@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fondo-navegacion {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 73px; /* Aumenta la altura de la barra de navegación */
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea los elementos a la izquierda */
+    padding-top: 20px;
+    padding-left: 20px; /* Ajusta el espacio izquierdo según sea necesario */
+    padding-right: 5%;
+    font-weight: lighter;
+    position: relative; 
+    z-index: 2; 
+}
+
+.logo{
+    position: relative;
+    transform: scale(1.5); /* Aumenta el tamaño del logo */
+    width: 40px;
+    left: 290px;
+}
+
+.buscar {
+    position: relative;
+    left: 350px;
+    top: 0px;
+    width: 547px;
+    height: 33px;
+}
+
+nav h1 {
+    padding-right: 20px; /* Ajusta el espacio derecho según sea necesario */
+}
+
+ul.iconos {
+    position: absolute;
+    top: 25px; /* Ajusta la posición vertical */
+    right: 260px; /* Ajusta la posición horizontal */
+}
+
+h1 {
+    position: relative;
+    color: rgb(255, 255, 255);
+    left: 320px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+span{
+    color: #EF3340;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0 10px;
+    color: white;
+}
+
+/*Efectos*/
+.logo:hover {
+    transform: scale(1.3); /* Aumenta el tamaño del logo en hover */
+}
+
+nav h1:hover {
+    color: #c0baba; /* Cambia el color del texto en hover */
+}
+
+ul li:hover {
+    transform: scale(1.3);
+}
