@@ -1,34 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <link rel="shortcut icon" type="image/x-icon" href="assets/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <script src="js/main.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>LevelUp Access</title>
-</head>
-<body>
-
-    <div class="fondo-navegacion"></div>
-
+  </head>
+  <body>
     <!-- VAMOS A HACER NUESTRO MENU DE CABEZA -->
-    <header class="navegacion"> 
-
-        <nav>
-            <img src="assets/logo.png" alt="Logo tienda" class="logo">
-            <h1>LevelUp <br><span>Access</span></h1>
-            
-            <input type="text" class="buscar" placeholder="Buscar en LevelUpAccess">
-            <ul class="iconos">
-                <li class="iconos"><img src="assets/usuario.png" alt="Icono de corazon"><a href="#"></a></li>
-                <li class="iconos"><img src="assets/me-gusta.png" alt="Icono de corazon"><a href="#"></a></li>
-                <li class="iconos"><img src="assets/campana.png" alt="Icono de corazon"><a href="#"></a></li>
-                <li class="iconos"><img src="assets/carrrito.png" alt="Icono de corazon"><a href="#"></a></li>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <div class="nav-left">
+            <img src="assets/logo.png" alt="Logo tienda" class="logo" />
+            <h1>LevelUp <br /><span>Access</span></h1>
+          </div>
+          <div class="nav-center">
+            <input
+              type="text"
+              class="buscar"
+              placeholder="Buscar en LevelUpAccess"
+            />
+          </div>
+          <div class="nav-right">
+            <ul class="">
+              <li class="iconos">
+                <a href="#">
+                  <img src="assets/usuario.png" alt="Icono de corazon" />
+                </a>
+              </li>
+              <li class="iconos">
+                <a href="#">
+                  <img src="assets/me-gusta.png" alt="Icono de corazon" />
+                </a>
+              </li>
+              <li class="iconos">
+                <a href="#">
+                  <img src="assets/campana.png" alt="Icono de corazon" />
+                </a>
+              </li>
+              <li class="iconos">
+                <a href="#">
+                  <img src="assets/carrrito.png" alt="Icono de corazon" />
+                </a>
+              </li>
             </ul>
-        </nav>       
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- CIERRA MENU DE CABECERA -->
-</body>
+
+    <main>
+        <img src="assets/banner.png" alt="Imagen del banner" class="background">
+
+        <div class="container">
+            <img src="assets/logo.png" alt="Logo LevelUp" class="imagenBanner">
+
+            <h1 class="title">LevelUp <span class="text-red">Access</span></h1>
+            <h2 class="sub-title">Juega sin limites</h2>
+            <a href="#" class="btn red">Inicia Sesión</a>
+            <a href="#" class="btn pink text-red">Registrar</a>
+
+        </div>
+    </main>
+    
+
+  </body>
 </html>
