@@ -85,12 +85,10 @@ h1 {
     transform: scale(1.3);
 }
   
-  
 ul li:hover {
     transform: scale(1.3);
 }
   
-
 .background{
     position: absolute;
     width: 100%;
@@ -101,7 +99,6 @@ ul li:hover {
 main{
     display: flex;
     justify-content: center;
-    margin-top: 73px;
 }
 
 
