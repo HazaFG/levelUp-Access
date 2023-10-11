@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/configuracion-usuario.css" />
+    <title>Configuracion de usuario</title>
+  </head>
+  <body>
+    <!-- VAMOS A HACER NUESTRO MENU DE CABEZA -->
+    <header>
+      <nav>
+        <div class="nav-container">
+          <div class="nav-left">
+            <img src="assets/logo.png" alt="Logo tienda" class="logo" />
+            <h1>LevelUp <br /><span>Access</span></h1>
+          </div>
+          <div class="nav-center">
+            <input
+              type="text"
+              class="buscar"
+              placeholder="Buscar en LevelUpAccess"
+            />
+          </div>
+          <div class="nav-right">
+            <ul class="">
+              <li class="iconos">
+                <a href="#">
+                  <img src="assets/usuario.png" alt="Icono de corazon" />
+                </a>
+              </li>
+              <li class="iconos">
+                <a href="#">
+                  <img src="assets/me-gusta.png" alt="Icono de corazon" />
+                </a>
+              </li>
+              <li class="iconos">
+                <a href="#">
+                  <img src="assets/campana.png" alt="Icono de corazon" />
+                </a>
+              </li>
+              <li class="iconos">
+                <a href="#">
+                  <img src="assets/carrrito.png" alt="Icono de corazon" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- CIERRA MENU DE CABECERA -->
+
+    <main>
+        <div class="contenedor-principal">
+            <div class="pestaña">
+
+                <picture>
+                    <source srcset="assets/foto-usuario1.png" media="screen and (max-width:475px)">
+                    <source srcset="assets/foto-usuario1.png" media="screen and (max-width:768px)">
+                      
+                    <img class="usuario" src="assets/foto-usuario.png" alt="Icono de usuario">
+                    
+                  </picture>
+                
+                <p>Hazael Flores</p>
+                <ul class="lista-personalizada">
+                    <li><a href="#datos-personales"><img class="icono" src="assets/flecha.png"> Datos personales</a></li>
+                    <li><a href="#metodos-pago"><img class="icono" src="assets/flecha.png"> Métodos de pago</a></li>
+                    <li><a href="#eliminar-cuenta"><img class="icono" src="assets/flecha.png"> Eliminar cuenta</a></li>
+                    <li><a href="#descargas"><img class="icono" src="assets/flecha.png"> Descargas</a></li>
+                </ul>
+            </div>
+            <div class="contenido">
+                <div id="datos-personales">
+                    <h2>Datos personales</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+                        </div>
+                        <div class="form-group">
+                            <label for="lugar-nacimiento">Lugar de nacimiento:</label>
+                            <input type="text" id="lugar-nacimiento" name="lugar-nacimiento">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="direccion">Dirección personal:</label>
+                            <input type="text" id="direccion" name="direccion">
+                        </div>
+                        <button type="submit">Guardar cambios</button>
+                    </form>
+                </div>
+                <!-- Otros contenidos -->
+            </div>
+        </div>
+    </main>
+  </body>
+</html>
