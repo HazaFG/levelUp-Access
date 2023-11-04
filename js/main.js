@@ -1,20 +1,16 @@
-document.addEventListener('DOMContentLoaded', function () {
-        const usuarioIcon = document.getElementById('usuario-icon');
-        const dropdownMenu = usuarioIcon.querySelector('.dropdown-menu');
+const hamburguesa = document.querySelector('.hamburguesa');
+const enlaces = document.querySelector('.clases-menu');
+const iconos = document.querySelector('.iconos-menu');
+const cuentas = document.querySelector('.cuenta-menu');
 
-        usuarioIcon.addEventListener('click', function (event) {
-            event.stopPropagation(); // Evita que el clic se propague al documento
+const barras = document.querySelectorAll('.hamburguesa span')
 
-            if (dropdownMenu.style.display === 'block') {
-                dropdownMenu.style.display = 'none';
-            } else {
-                dropdownMenu.style.display = 'block';
-            }
-        });
 
-        // Cierra el menú desplegable si se hace clic en cualquier lugar fuera de él
-        document.addEventListener('click', function () {
-            dropdownMenu.style.display = 'none';
-        });
-    });
+hamburguesa.addEventListener('click', ()  =>{
+    enlaces.classList.toggle('activado');
+    iconos.classList.toggle('activado');
+    cuentas.classList.toggle('activado');
+    barras.forEach(child => {child.classList.toggle('animado')})
+})
+
 
