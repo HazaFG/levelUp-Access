@@ -1,78 +1,61 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="shortcut icon" type="image/x-icon" href="assets/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-    <script src="js/main.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <title>LevelUp Access</title>
-  </head>
-  <body>
-    <!-- VAMOS A HACER NUESTRO MENU DE CABEZA -->
-    <header>
-      <nav>
-        <div class="nav-container">
-          <div class="nav-left">
-            <img src="assets/logo.png" alt="Logo tienda" class="logo" />
-            <a href="index.html">
-              <h1 class="titulo">LevelUp <br /><span>Access</span></h1>
-          </a>
-          </div>
-          <div class="nav-center">
-            <input
-              type="text"
-              class="buscar"
-              placeholder="Buscar en LevelUpAccess"
-            />
-          </div>
-          <div class="nav-right">
-            <ul class="">
-              <li class="iconos">
-                <a href="configuracion-usuario.html">
-                  <img src="assets/usuario.png" alt="Icono de corazon" />
-                </a>
-              </li>
-              <li class="iconos">
-                <a href="#">
-                  <img src="assets/me-gusta.png" alt="Icono de corazon" />
-                </a>
-              </li>
-              <li class="iconos">
-                <a href="#">
-                  <img src="assets/campana.png" alt="Icono de corazon" />
-                </a>
-              </li>
-              <li class="iconos">
-                <a href="carrito-vacio.html">
-                  <img src="assets/carrrito.png" alt="Icono de corazon" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- CIERRA MENU DE CABECERA -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <main>
-        <img src="assets/banner.png" alt="Imagen del banner" class="background">
+  <!-- Fuentes tipograficas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&family=Roboto:wght@100&display=swap" rel="stylesheet">
 
-        <div class="container">
-            <img src="assets/logo.png" alt="Logo LevelUp" class="imagenBanner">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>LevelUp Access</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">
+        <img class = "logo" src="assets/logo.png" alt="LevelUp Access logo">
+      </a>
+      <h1 class="title">
+        LevelUp Access
+      </h1>
 
-            <h1 class="title">LevelUp <span class="text-red">Access</span></h1>
-            <h2 class="sub-title">Juega sin limites</h2>
-            <a href="acceder.html" class="btn red">Inicia Sesión</a>
-            <a href="crear-cuenta.html" class="btn pink text-red">Registrar</a>
+      <div class="buscar-container">
+        <i class="fas fa-search lupa" style="color: white"></i>
+        <input type="text" class="buscar-barra" placeholder="Buscar">
+      </div>
 
-        </div>
-    </main>
-    
+      <ul class="clases-menu">
+        <li><a href="#">Tienda</a></li>
+        <li><a href="#">Categorías</a></li>
+        <li><a href="#">Ofertas</a></li>
+      </ul>
+      
+      <ul class="iconos-menu">        
+        <li class="iconos"><a href="#"><i class="fas fa-heart"></i></a></li>
+        <li class="iconos"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+      </ul>
+      
+      <ul class="cuenta-menu">        
+        <li class="iconos"><a href="#"><i class="fas fa-user"></i></a></li>
+        <li class="iconos"><a href="#"><i class="fas fa-user"></i></a></li>
+      </ul>
 
-  </body>
+      <button class="hamburguesa" type="button">
+        <span class="br-1"></span>
+        <span class="br-2"></span>
+        <span class="br-3"></span>
+      </button>
+    </nav>
+  </header>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
