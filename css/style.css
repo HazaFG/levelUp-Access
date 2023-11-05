@@ -191,7 +191,7 @@ nav{
 /* ESTE ES EL SLIDER */
 .slides{
     /* width: 100%; */
-    height: 90vh;
+    height: 100vh;
     margin: 0;
     overflow: hidden;
     position: relative;
@@ -248,15 +248,14 @@ nav{
 
 /* Footer */
 
-.footer{
+.foot{
     width: 100%;
+    margin-top: -104px;
     height: 10vh;
-    margin-top: 90px;
     background-color: #202020;
     z-index: 10;
+    color: white;
 }
-
-
 
 /* RESPONSIVE */
 
