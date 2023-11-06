@@ -328,6 +328,10 @@ nav{
         overflow: hidden;
     }
 
+    nav{
+        position: relative;
+    }
+
     .logo{
         position: relative;
         left: 48px;
@@ -447,6 +451,11 @@ nav{
 @media (max-width:1024px){
     body{
         overflow: hidden;
+    }
+
+    nav{
+        position: relative;
+        z-index: 30;
     }
 
     .logo{
