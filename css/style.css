@@ -19,29 +19,34 @@ body{
     font-weight: bold;
 }
 
-.logo{
-    position: fixed;
-    left: 80px;
-    top: 10px;
-    width: 50px;
-    height: 44px;
-}
 
 .title{
-    display: block;
+    display: flex;
     position: fixed;
-    left: 140px;
-    top: -5px;
+    flex-direction: row;
+    left: 90px;
     color: white;
     font-family: 'titulo';
     font-size: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    position: relative;
+    /* background-color: #404044; */
+    width: 60px;
+    height: 50px;
+    text-decoration: none;
 }
 
 .buscar-container {
     position: fixed;
     display: flex;
+    justify-content: center;
     left: 330px;
-    top: 1.5em;
+    /* top: 1.8vh; */
 }
 
 .rojo{
@@ -312,12 +317,27 @@ nav{
     margin-top: 3vh;
 }
 
+.ayuda{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 100;
+    right: 4vw;
+    bottom: 5vh;
+}
+
 .icon {
     font-size: 30px;
     color: #121212;
 }
 
-
+.ayuda img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
 
 /* Algo pa deployar */
 
@@ -328,25 +348,23 @@ nav{
         overflow: hidden;
     }
 
-    nav{
-        position: relative;
-    }
-
-    .logo{
+    /* .logo{
         position: relative;
         left: 48px;
         top: 15px;
         /* padding-left: 25px; */
-        /* align-items: center; */
-    }
+        /* align-items: center; 
+    } */
 
     .title{
-        display: block;
+        display: flex;
         position: relative;
         margin: 0;
         left: 110px;
-        top: -30px;
-        bottom: 45px;
+        /* top: -30px; */
+        /* bottom: 45px; */
+        align-items: center;
+        margin-bottom: 10px;
         /* background-color: pink; */
     }
 
@@ -453,26 +471,15 @@ nav{
         overflow: hidden;
     }
 
-    nav{
-        position: relative;
-        z-index: 30;
-    }
-
-    .logo{
-        position: relative;
-        left: 48px;
-        top: 15px;
-        /* padding-left: 25px; */
-        /* align-items: center; */
-    }
-
     .title{
-        display: block;
+        display: flex;
         position: relative;
         margin: 0;
-        left: 110px;
-        top: -30px;
-        bottom: 45px;
+        left: 15px;
+        /* top: -30px; */
+        /* bottom: 45px; */
+        align-items: center;
+        margin-bottom: 10px;
         /* background-color: pink; */
     }
 
