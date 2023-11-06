@@ -149,6 +149,13 @@ nav{
     border-right: 2px solid #6D6D6D; /* Color y estilo del borde derecho */
     padding-right: 10px; /* Espacio entre la línea y el contenido */
     margin-right: 10px; /* Espacio entre las listas */
+    transform: translateX(-80px);
+}
+
+.iconos-menu.activado {
+    transform: translateX(0);
+    left: 0;
+    position: relative;
 }
 
 .iconos-menu li{
@@ -174,6 +181,13 @@ nav{
 .cuenta-menu{
     display: flex;
     padding: 0;
+    transform: translateX(-80px);
+}
+
+.cuenta-menu.activado {
+    transform: translateX(0);
+    left: 0;
+    position: relative;
 }
 
 .cuenta-menu li{
@@ -249,19 +263,67 @@ nav{
 /* Footer */
 
 .foot{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
     width: 100%;
-    margin-top: -104px;
-    height: 10vh;
+    /* margin-top: -104px; */
+    height: 16vh;
     background-color: #202020;
     z-index: 10;
-    color: white;
+    color: #6D6D6D;
 }
+
+.faq-title{
+    display: flex;
+    position: relative;
+    margin: 0;
+}
+
+.bienvenida {
+    font-size: 30px;
+    display: flex;
+    position: relative;
+    /* background-color: #EF3340; */
+    top: 2vh;
+    left: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.redes-sociales {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.circle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #EF3340;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 3vh;
+}
+
+.icon {
+    font-size: 30px;
+    color: #121212;
+}
+
+
 
 /* Algo pa deployar */
 
 /* RESPONSIVE */
 
-@media (max-width:1180px){
+@media (max-width:1280px){
     body{
         overflow: hidden;
     }
