@@ -630,6 +630,37 @@ nav{
         z-index: -1;
     }
 
+    .slide{
+        position: absolute;
+        height: 100%;
+        opacity: 0;
+        inset: 0;
+        margin: 0;
+        animation: slide-show 12s infinite;
+    }
+    
+    .slide-2{
+        animation-delay: 2s;
+    }
+    .slide-3{
+        animation-delay: 4s;
+    }
+    
+    .slide-4{
+        animation-delay: 6s;
+    }
+    
+    .slide-5{
+        animation-delay: 8s;
+    }
+    
+    .slide img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
     .buscar-container{
         display: none;
     }
