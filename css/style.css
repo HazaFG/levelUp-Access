@@ -614,7 +614,6 @@ nav{
     }
 
     nav{
-        display: none;
         position: relative;
         flex-direction:column ;
         align-items: flex-start;
