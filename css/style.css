@@ -215,10 +215,8 @@ nav{
     font-size: 4rem;
     width: 100%;
     color: aliceblue;
-    top: 230px;
+    top: 25vh;
     /* background-color: #EF3340; */
-
-
 }
 
 .texto-container a:hover{
