@@ -2,6 +2,7 @@ const hamburguesa = document.querySelector('.hamburguesa');
 const enlaces = document.querySelector('.clases-menu');
 const iconos = document.querySelector('.iconos-menu');
 const cuentas = document.querySelector('.cuenta-menu');
+const bienvenidaTexto = document.querySelector('.texto-container');
 
 const barras = document.querySelectorAll('.hamburguesa span')
 
@@ -11,6 +12,8 @@ hamburguesa.addEventListener('click', ()  =>{
     iconos.classList.toggle('activado');
     cuentas.classList.toggle('activado');
     barras.forEach(child => {child.classList.toggle('animado')})
+
+    bienvenidaTexto.classList.toggle('oculto');
 })
 
 
