@@ -623,6 +623,26 @@ nav{
         /* overflow: hidden; */
     }
 
+    .texto-container{
+        position: absolute;
+        text-align: center;
+        font-family: 'titulo';
+        font-weight: bold;
+        font-size: 3.5rem;
+        width: 100%;
+        color: aliceblue;
+        top: 20vh;
+        /* background-color: #EF3340; */
+        z-index: 5;
+    }
+    
+    .texto-container a:hover{
+        /* Lo haremos mas suave */
+        background-color: transparent; /* Cambia el color de fondo predeterminado */
+        transition: background-color 0.3s ease; /* Agrega una transición para background-color */
+        background-color: #202020;
+    }
+
     .title{
         display: flex;
         position: relative;
