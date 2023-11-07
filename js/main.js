@@ -3,6 +3,7 @@ const enlaces = document.querySelector('.clases-menu');
 const iconos = document.querySelector('.iconos-menu');
 const cuentas = document.querySelector('.cuenta-menu');
 const bienvenidaTexto = document.querySelector('.texto-container');
+const videoJuegos = document.querySelector('.juegos-container');
 
 const barras = document.querySelectorAll('.hamburguesa span')
 
@@ -14,6 +15,7 @@ hamburguesa.addEventListener('click', ()  =>{
     barras.forEach(child => {child.classList.toggle('animado')})
 
     bienvenidaTexto.classList.toggle('oculto');
+    videoJuegos.classList.toggle('oculto');
 })
 
 
