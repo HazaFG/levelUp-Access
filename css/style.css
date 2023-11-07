@@ -623,7 +623,7 @@ nav{
 
     .slides{
         /* width: 100%; */
-        height: 80vh;
+        height:100vh;
         margin: 0;
         overflow: hidden;
         position: relative;
@@ -656,14 +656,14 @@ nav{
     
     .slide img{
         width: 100%;
-        height: 90%;
+        height: 100%;
         object-fit: cover;
         object-position: center;
     }
 
     .content-container {
         overflow-y: scroll; /* Habilita el scroll vertical para el contenido */
-        max-height: 80vh; /* Limita la altura del contenedor de contenido al 80% de la altura de la pantalla */
+        max-height: 100vh; /* Limita la altura del contenedor de contenido al 80% de la altura de la pantalla */
     }
 
     .buscar-container{
