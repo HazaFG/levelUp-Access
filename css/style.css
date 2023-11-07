@@ -586,7 +586,8 @@ nav{
 
 @media (max-width:428px){
     body{
-        overflow: hidden;
+        overflow: auto;
+        /* overflow: hidden; */
     }
 
     .title{
@@ -663,7 +664,7 @@ nav{
 
     .content-container {
         overflow-y: scroll; /* Habilita el scroll vertical para el contenido */
-        max-height: 100vh; /* Limita la altura del contenedor de contenido al 80% de la altura de la pantalla */
+        max-height: 90vh; /* Limita la altura del contenedor de contenido al 80% de la altura de la pantalla */
     }
 
     .buscar-container{
