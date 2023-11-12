@@ -64,6 +64,7 @@ nav{
     align-items: center;
     min-height: 8vh;
     background-color: #121212;
+    z-index: 100;
 }
 
 .hamburguesa{
@@ -207,34 +208,209 @@ nav{
     font-size: 1.8rem;
 }
 
-.texto-container{
-    position: absolute;
-    text-align: center;
-    font-family: 'titulo';
-    font-weight: bold;
-    font-size: 4rem;
-    width: 100%;
-    color: aliceblue;
-    top: 25vh;
-    /* background-color: #EF3340; */
-}
+/*CATEGORIAS*/
 
-.texto-container a:hover{
-        /* Lo haremos mas suave */
-    background-color: transparent; /* Cambia el color de fondo predeterminado */
-    transition: background-color 0.3s ease; /* Agrega una transición para background-color */
-    background-color: #202020;
-}
-
-.empezar-boton{
-    text-decoration: none;
-    /* display: block; */
-    font-size: 35px;
-    width: 12vw;
-    background-color: #EF3340;
+.titulo-categorias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
+    margin: 0;
+}
+
+.categorias-container{
+    position: relative;
+    top: 13vh;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.cuadrados{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.carreras-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #202020;
+    width: 160px;
+    height: 140px;
     border-radius: 10px;
-    padding: 20px 40px;
+    margin: 20px;
+}
+
+.carreras-container img{
+    position: relative;
+    width: 130px;
+    height: 90px;
+    margin-left: 13px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.carreras-container h3{
+    text-align: center;
+    color: white;
+}
+
+
+/* EL CODIGO PARA LA OFERTA COMIENZA AQUI */
+
+
+.juegos-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /*background-color: white; */
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    /* margin-top: 50px; */
+}
+
+.juegos-promocion{
+    display: flex;
+    /* position: ; */
+    justify-content: flex-start;
+    margin-top: 100px;
+    background-color: none;
+    color: white;
+
+}
+
+.primera-fila-container {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que los elementos se envuelvan en varias filas si es necesario */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    /*background-color: aqua; */
+    /* padding-top: 130px; */
+    /* marg */
+}
+
+.portada-1 img{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 12px;
+}
+
+.segunda-fila-container{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin: 0;
+    background-color: aqua;
+}
+
+.portada-1 img{
+    width: 300px;
+    height: 420px;
+    border-radius: 10px;
+    margin: 12px;
+    margin-bottom: 0px;
+}
+
+/*PRECIO DE LOS JUEGOS*/
+
+.categoria-porcentaje-container h3{
+    margin: 0;
+}
+
+.titulo-precio-container h3{
+    margin: 0;
+}
+
+/*PARTE DE ARRIBA*/
+.categoria-porcentaje-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-left: 12px;
+    margin-top: 0px;
+    align-items: center;
+    z-index: -1;
+}
+
+.categoria-juego{
+    /*background-color: #EF3340;*/
+    color: #7D7D7D;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.categoria-porciento{
+    background-color: #036EEC;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/*FINAL PARTE DE ARRIBA*/
+
+/*PARTE DE ABAJO*/
+
+.titulo-precio-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-left: 12px;
+    margin-top: 0px;
+    align-items: center;
+    z-index: -1;
+}
+
+.categoria-titulo{
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.categoria-precio{
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*FIN PRECIO DE LOS JUEGOS*/
+
+
+
+.oculto {
+    display: none;
+}
+
+/* Ajusta esto según tus necesidades */
+.activado {
+    /* Estilos para cuando el menú está activado */
+    overflow: hidden; /* Deshabilita el desplazamiento en el contenedor activado */
+}
+
+.activado{
+    /* Estilos para cuando el menú está activado */
+    overflow: hidden; /* Deshabilita el desplazamiento en el contenedor activado */
+}
+
+.activado, .foot {
+    /* Estilos para cuando el menú está activado */
+    height: 20vh;
+}
+  
+  /* Asegúrate de que el desplazamiento sea visible cuando el menú no esté activado */
+  :not(.activado) {
+    overflow: visible;
 }
 
 
@@ -781,6 +957,7 @@ nav{
     transform: rotate(45deg) translate(-10px, -4px);
 }
 
+/*ESTO ES EL FONDO PARA EL SLIDER*/
 .slides::before {
     content: "";
     position: absolute;
@@ -792,89 +969,23 @@ nav{
     z-index: 1; /* Asegura que la capa esté por encima de las imágenes */
 }
 
-/* EL CODIGO PARA LA OFERTA COMIENZA AQUI */
-
-
-.juegos-container{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    /* background-color: rgb(227, 0, 0); */
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-around;
-    /* margin-top: 50px; */
+/* Ajusta esto según tus necesidades */
+.activado {
+    /* Estilos para cuando el menú está activado */
+    overflow: hidden; /* Deshabilita el desplazamiento en el contenedor activado */
 }
 
-.caja{
-    display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    background-color: #202020;
-    height: 250px;
+.activado{
+    /* Estilos para cuando el menú está activado */
+    overflow: hidden; /* Deshabilita el desplazamiento en el contenedor activado */
 }
 
-.generos-container{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 100px;
-    background-color: none;
-    color: white;
-    /* background-color: #202020; */
-    flex-wrap: wrap;  /* Permite que los elementos se envuelvan en varias filas si es necesario */
+.activado, .foot {
+    /* Estilos para cuando el menú está activado */
+    height: 20vh;
 }
-
-.portada-2 img{
-    width: 298px;
-    height: 162px;
-    border-radius: 10px;
-    margin: 12px;
-}
-
-.juegos-promocion{
-    display: flex;
-    /* position: ; */
-    justify-content: flex-start;
-    margin-top: 100px;
-    background-color: none;
-    color: white;
-}
-
-.primera-fila-container {
-    display: flex;
-    flex-wrap: wrap;  /* Permite que los elementos se envuelvan en varias filas si es necesario */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    /* background-color: aqua; */
-    /* padding-top: 130px; */
-    /* marg */
-}
-
-.portada-1 img{
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    margin: 12px;
-}
-
-.segunda-fila-container{
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    margin: 0;
-    /* background-color: aqua; */
-}
-
-.portada-1 img{
-    width: 300px;
-    height: 420px;
-    border-radius: 10px;
-    margin: 12px;
-}
-
-
-
-
-.oculto {
-    display: none;
+  
+  /* Asegúrate de que el desplazamiento sea visible cuando el menú no esté activado */
+  :not(.activado) {
+    overflow: visible;
 }

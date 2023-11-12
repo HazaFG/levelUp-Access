@@ -855,3 +855,19 @@ nav{
     display: none;
 }
 
+/* Ajusta esto según tus necesidades */
+.activado {
+    /* Estilos para cuando el menú está activado */
+    overflow: hidden; /* Deshabilita el desplazamiento en el contenedor activado */
+
+}
+
+.activado, .foot {
+    /* Estilos para cuando el menú está activado */
+    height: 20vh;
+}
+  
+  /* Asegúrate de que el desplazamiento sea visible cuando el menú no esté activado */
+  :not(.activado) {
+    overflow: visible;
+}
