@@ -305,9 +305,9 @@ nav{
     flex-direction: column;
     position: relative;
 
-    width: 100%;
+    width: 120%;
     /* margin-top: -104px; */
-    height: 16vh;
+    height: 14vh;
     background-color: #202020;
     z-index: 10;
     color: #6D6D6D;
