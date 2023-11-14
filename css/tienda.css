@@ -103,7 +103,6 @@ nav{
     width: 300px; /* Ajusta el valor según sea necesario */
     height: 35px;
     border: none;
-
 }
 
 
@@ -211,74 +210,22 @@ nav{
 
 /*AQUI EMPEZAREMOS A METER EL CODIGO DE LA TIENDA*/
 
-.slider-container{
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    place-content: center;
-}
-
-.slider-tienda{
-    width: 100vh;
-    max-width: 1000px ;
-    height: 720px;
+.slider{
     overflow: hidden;
-    border-radius: 10px;
-}
-
-.slider-tienda ul{
-    display: flex;
-    padding: 0;
-    width: 400%;
-
-    animation: slide 15s infinite cubic-bezier(0.55, 0.48, 0.37, 0.92);
-}
-
-@keyframes slider-tienda{
-    0%{margin-left: 0;}
-    20%{margin-left: 0;}
-
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
-}
-
-
-.foot{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-
+    z-index: -1;
+    position: relative; 
+ }
+ 
+ .slider--inner{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     transition: all 0.3s ease-in;
+ }
+ 
+ .slider--inner img {
     width: 100%;
-    /* margin-top: -104px; */
-    height: 14vh;
-    background-color: #202020;
-    z-index: 10;
-    color: #6D6D6D;
-}
-
-.faq-title{
-    display: flex;
-    position: relative;
-    margin: 0;
-}
-
-.faq {
-    font-size: 30px;
-    display: flex;
-    position: relative;
-    /* background-color: #EF3340; */
-    top: 2vh;
-    left: 30px;
-    margin: 0;
-    padding: 0;
-}
-
+ }
 
 .redes-sociales {
     display: flex;
@@ -628,7 +575,7 @@ nav{
         /* width: 100%; */
         height:100vh;
         margin: 0;
-        /* overflow: scroll; */
+        overflow: scroll;
         position: relative;
         z-index: 1;
     }
@@ -665,7 +612,7 @@ nav{
     }
 
     .content-container {
-        overflow-y: scroll; /* Habilita el scroll vertical para el contenido */
+        overflow-y: scroll; /*Habilita el scroll vertical para el contenido */
         max-height: 90vh; /* Limita la altura del contenedor de contenido al 80% de la altura de la pantalla */
     }
 
@@ -807,7 +754,7 @@ nav{
 /* Ajusta esto según tus necesidades */
 .activado {
     /* Estilos para cuando el menú está activado */
-    overflow: hidden; /* Deshabilita el desplazamiento en el contenedor activado */
+    overflow: hidden;  /*Deshabilita el desplazamiento en el contenedor activado */
 
 }
 
@@ -818,5 +765,5 @@ nav{
   
   /* Asegúrate de que el desplazamiento sea visible cuando el menú no esté activado */
   :not(.activado) {
-    overflow: visible;
+    /* overflow: visible; */
 }
