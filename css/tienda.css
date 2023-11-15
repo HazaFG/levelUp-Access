@@ -233,7 +233,7 @@ nav{
     align-items: center;
     width: 15%;
     height: 100vh;
-    background-color: #121212;
+    background-color: #9d1919;
 }
 
 .iconos-tienda-caja {
@@ -285,7 +285,7 @@ nav{
     position: relative;
     width: 65%;
     height: 100vh;
-    background-color: #121212;
+    background-color: #0a8cbd;
     z-index: -1;
 }
 
@@ -328,6 +328,7 @@ nav{
     width: 20%;
     height: 100vh;
     background-color: #ffdddd;
+    flex-direction: column;
 }
 
 
