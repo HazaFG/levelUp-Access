@@ -63,6 +63,8 @@ nav{
     align-items: center;
     min-height: 8vh;
     background-color: #121212;
+    /* margin-bottom: 9vh; */
+    z-index: 1000;
 }
 
 .hamburguesa{
@@ -210,22 +212,157 @@ nav{
 
 /*AQUI EMPEZAREMOS A METER EL CODIGO DE LA TIENDA*/
 
+
+
+
+ /* empezamos con la tienda */
+
+ /* CONTENEDOR DE LA IZQUIERDA */
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    /* background-color: #EF3340; */
+    z-index: 1;
+}
+
+.left-container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    height: 100vh;
+    background-color: #121212;
+}
+
+.iconos-tienda-caja {
+    position: relative;
+    top: 8vh;
+    padding: 0;
+}
+
+.left-container li {
+    display: flex;
+    color: white;
+    position: relative;
+    list-style-type: none;
+    font-size: 1vw;
+    margin: 5px 0;
+    /* background-color: aquamarine; */
+}
+
+.left-container li a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    align-items: center; /* Alinea el icono y el texto verticalmente */
+    padding: 2vh 7vh;
+    transition: background-color 0.3s ease;
+}
+
+.left-container li a img {
+    margin-right: 8px; /* Ajusta el margen entre el icono y el texto según sea necesario */
+    height: 3vh; /* Ajusta la altura del icono según sea necesario */
+    width: 1.5vw; /* Ajusta el ancho del icono según sea necesario */
+}
+
+.left-container li a:hover {
+    background-color: #202020;
+    border-radius: 5px;
+    padding: 2vh 7vh;
+}
+
+
+.left-container li a i {
+    margin-right: 10px; /* Ajusta el margen entre el icono y el texto según sea necesario */
+}
+
+/* CONTENEDOR DEL MEDIO */
+
+.center-container{
+    display: flex;
+    position: relative;
+    width: 65%;
+    height: 100vh;
+    background-color: #121212;
+    z-index: -1;
+}
+
 .slider{
     overflow: hidden;
     z-index: -1;
     position: relative; 
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    top: 10vh;
  }
  
- .slider--inner{
+.slider--inner{
      display: flex;
      flex-direction: row;
      flex-wrap: nowrap;
      transition: all 0.3s ease-in;
+
+     width: 60vw;
+
  }
  
- .slider--inner img {
+.slider--inner img {
+    border-radius: 20px;
     width: 100%;
- }
+}
+
+
+
+
+
+
+/* CONTENEDOR DE LA DERECHA */
+.right-container{
+    display: flex;
+    position: relative;
+    right: 0px;
+    
+    width: 20%;
+    height: 100vh;
+    background-color: #ffdddd;
+}
+
+
+
+ /* Footer */
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    width: 100%;
+    /* margin-top: -104px; */
+    height: 16vh;
+    background-color: #202020;
+    z-index: 10;
+    color: #6D6D6D;
+}
+
+.faq-title{
+    display: flex;
+    position: relative;
+    margin: 0;
+}
+
+.faq {
+    font-size: 30px;
+    display: flex;
+    position: relative;
+    /* background-color: #EF3340; */
+    top: 2vh;
+    left: 30px;
+    margin: 0;
+    padding: 0;
+}
 
 .redes-sociales {
     display: flex;
@@ -695,7 +832,7 @@ nav{
         height: 3.5em;
         margin-bottom: 10px;
     }
-    
+
     .slides::before {
         content: "";
         position: absolute;
@@ -776,6 +913,8 @@ nav{
 }
   
   /* Asegúrate de que el desplazamiento sea visible cuando el menú no esté activado */
-  :not(.activado) {
-    /* overflow: visible; */
+  /* :not(.activado) { */
+    /* overflow: visible; 
 }
+
+*/
