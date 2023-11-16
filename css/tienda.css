@@ -334,9 +334,9 @@ nav{
 .juegos{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     position: relative;
-    top: 4vh;
+    top: 10vh;
     height: 100vh;
 }
 
@@ -348,10 +348,11 @@ nav{
 
 .portadas{
     display: flex;
+    margin-bottom: 5vh;
 }
 
 .portadas h2{
-    margin-top: 3.8vh;
+    margin-top: 4.5vh;
     margin-left: 1vw;
 }
 
