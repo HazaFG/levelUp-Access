@@ -867,7 +867,7 @@ nav{
     height: 20vh;
 }
   
-  /* Asegúrate de que el desplazamiento sea visible cuando el menú no esté activado */
+  /* Asegúrate de que el desplazamiento sea visible cuando el menú no esté activado
   :not(.activado) {
     overflow: visible;
-}
+} */
