@@ -305,7 +305,7 @@ nav{
     right: 1.8vw;
     display: flex;
     width: 25%;
-    background-color: #202020;
+    /* background-color: #202020; */
     /* height: 50vh; */
     flex-direction: column;
 }
